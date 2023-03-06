@@ -48,7 +48,7 @@ help
 即可看到帮助信息。
 
 ## 详细文档
- - [GitHub Wiki](https://github.com/ArgonarioD/hammer-mirai-help/wiki)（包含用户手册和开发者手册）
+ - [GitHub Wiki](https://github.com/ArgonarioD/hammer-mirai-help/wiki/%E4%B8%BB%E9%A1%B5)（包含用户手册和开发者手册）
 
 ## 鸣谢
  - [Mirai](https://github.com/mamoe/mirai)
