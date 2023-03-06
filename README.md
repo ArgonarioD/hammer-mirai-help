@@ -15,6 +15,14 @@
 <img src="https://img.shields.io/badge/JVM-11%2B-blue" alt="JVM 11+">
 </div>
 
+## 本插件针对的一些问题
+ - 用一个帮助指令显示机器人所有功能会让对话十分冗余；
+ - 自行编写并维护一个帮助指令比较麻烦，且可能容易漏掉新加的插件，对于硬编码实现的帮助指令每次需要重新构建部署；
+ - 大部分自动生成的帮助指令只能对插件注册的命令进行帮助提示，无法对基于事件系统的指令进行提示；
+ - 需要修改其他插件提供的帮助信息；
+ - 可能需要使用自定义图片的作为帮助指令，并且需要热重载来实时进行修改；
+ - 等。
+
 ## 功能
  - 安装新插件后，用户只需要执行一行指令即可自动配置该插件的帮助信息：
    - 对于接入本插件接口的插件，本插件会按照其配置的帮助信息进行配置；
@@ -53,5 +61,10 @@ help
 ## 鸣谢
  - [Mirai](https://github.com/mamoe/mirai)
  - [nonebot-plugin-help](https://github.com/XZhouQD/nonebot-plugin-help): 本插件的灵感来源
+
+## 效果图
+![preview1](./readme/preview1.png)
+![preview2](./readme/preview2.png)
+![preview3](./readme/preview3.png)
 ---
    ~~*如果觉得有用的话求点个Star啵QwQ*~~
