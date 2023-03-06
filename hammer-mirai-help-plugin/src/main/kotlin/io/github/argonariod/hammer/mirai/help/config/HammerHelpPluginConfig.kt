@@ -11,7 +11,7 @@ object HammerHelpPluginConfig : ReadOnlyPluginConfig("config") {
         如：本项配置为"help"时：
             Bot接收到"help"的消息时，将会发送本插件的总览帮助信息
             Bot接收到"help list"的消息时，将会发送所有该发送者能够查看帮助信息的插件的列表
-            Bot接收到"help xxx"的消息时，将会发送插件xxx的帮助信息
+            Bot接收到"help xxx"的消息时，将会发送插件xxx的帮助信息，其中xxx可以是插件的ID、插件的名称、插件的别名
         """
     )
     val helpCommandName: String by value("help")

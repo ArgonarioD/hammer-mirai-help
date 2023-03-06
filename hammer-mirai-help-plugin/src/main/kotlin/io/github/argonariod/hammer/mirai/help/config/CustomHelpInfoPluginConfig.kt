@@ -17,7 +17,7 @@ object CustomHelpInfoPluginConfig : AutoSavePluginConfig("custom-helps") {
         """
         自定义帮助信息，
         enable是该插件的帮助信息是否启用，当其为false时，该插件不会出现在帮助列表中，也不会响应对于该插件的详细帮助查询。
-        names是该插件的名称及别名，该项的值是一个字符串列表。
+        names是该插件的名称及别名，该项的值是一个字符串列表，其中第一个值是插件的名称，第二个开始的值是插件的别名。
         brief是该插件的简介，会显示在插件帮助列表中。
         displayPermissionId是显示该插件的帮助信息所需的权限，当其为null时，代表不需要权限。
         usage是该插件的帮助信息。

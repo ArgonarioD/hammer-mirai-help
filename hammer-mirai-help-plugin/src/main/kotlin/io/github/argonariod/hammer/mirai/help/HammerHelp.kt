@@ -15,11 +15,11 @@ import net.mamoe.mirai.event.globalEventChannel
 object HammerHelp : KotlinPlugin(
     JvmPluginDescription(
         id = "io.github.argonariod.hammer-help",
-        name = "Hammer Help",
+        name = "Hammer Mirai Help",
         version = "1.0.0",
     ) {
         author("ArgonarioD")
-        info("""帮助Bot主组织各插件的帮助信息""")
+        info("""用以组织 Mirai Console 装载的插件们的帮助信息的 Mirai Console 插件""")
     }
 ) {
     @OptIn(ConsoleExperimentalApi::class)
@@ -27,7 +27,7 @@ object HammerHelp : KotlinPlugin(
         help {
             names.addAll("hammer-help", "h-help")
             usage = """
-                |欢迎使用Hammer Help插件！
+                |欢迎使用Hammer Mirai Help插件！
                 |下文中的帮助指令前缀就是你呼出本帮助信息的指令前缀，如：你的帮助指令前缀为"help"时，你可以通过发送"help"来呼出本帮助信息。
                 |<帮助指令前缀> - 查看本帮助信息
                 |<帮助指令前缀> list - 查看所有你能够查看帮助信息的插件的列表
@@ -36,7 +36,7 @@ object HammerHelp : KotlinPlugin(
                 |在以下指令中，/hammer-help可以替换为/h-help
                 |/hammer-help reload - 重新加载Hammer Help的配置
                 |/hammer-help loadDefaults - 令Hammer Help插件加载所有插件的默认帮助信息（不会改变已经存在的自定义配置）
-                |/hammer-help resetToDefault - 将指定插件的自定义配置的帮助信息置为默认帮助信息
+                |/hammer-help resetToDefault <插件ID> - 将指定插件的自定义配置的帮助信息置为默认帮助信息
             """.trimMargin()
         }
 
