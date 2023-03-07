@@ -40,10 +40,14 @@
 
 ## 快速开始
 ### 安装
+#### 通过 Mirai Console Loader 安装 （推荐）
+在 `mcl` 所在的文件夹下执行
+```shell
+./mcl --update-package io.github.argonariod:hammer-mirai-help --channel stable --type plugin
+```
+然后再启动 Mirai Console Loader 即可。
 #### 手动安装
 在右侧的 `Release` 处下载最新的 `.jar` 文件，将其放入 `plugins` 目录下，重启 Mirai Console 。
-#### 通过 Mirai Console Loader 安装
-暂未接入，敬请期待。
 ### 第一次启动
 使用指令
 ```
@@ -62,7 +66,7 @@ help
  - [Mirai](https://github.com/mamoe/mirai)
  - [nonebot-plugin-help](https://github.com/XZhouQD/nonebot-plugin-help): 本插件的灵感来源
 
-## 效果图
+## 部分功能效果预览图
 ![preview1](./readme/preview1.png)
 ![preview2](./readme/preview2.png)
 ![preview3](./readme/preview3.png)
